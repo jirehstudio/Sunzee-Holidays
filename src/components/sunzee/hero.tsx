@@ -23,7 +23,7 @@ export function Hero() {
 
   return (
     <section id="home" className="relative">
-      <div className="relative h-[92vh] min-h-[620px] max-h-[920px] w-full overflow-hidden bg-[var(--emerald)]">
+      <div className="relative h-[calc(100vh-140px)] min-h-[500px] md:h-[calc(100vh-192px)] md:min-h-[580px] md:max-h-[850px] w-full overflow-hidden bg-[var(--emerald)]">
         {/* Slides with Ken Burns effect */}
         {HERO_SLIDES.map((src, i) => (
           <div
@@ -49,37 +49,37 @@ export function Hero() {
 
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto max-w-7xl px-6 h-full flex items-center">
+        <div className="relative z-10 container mx-auto max-w-7xl px-6 h-full flex items-center pb-20 md:pb-24 pt-4">
           <div className="max-w-3xl">
             {/* Pill badge */}
-            <div className="inline-flex items-center gap-2.5 rounded-full border border-[var(--gold)]/50 bg-[var(--ink)]/30 backdrop-blur px-4 py-2 mb-7">
+            <div className="inline-flex items-center gap-2.5 rounded-full border border-[var(--gold)]/50 bg-[var(--ink)]/30 backdrop-blur px-4 py-2 mb-3 md:mb-4">
               <span className="text-[10px] md:text-xs font-medium tracking-[0.32em] uppercase text-[var(--cream)]">
                 {SITE.tagline}
               </span>
             </div>
 
             {/* Headline */}
-            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[0.95] text-[var(--cream)] drop-shadow-lg">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-medium leading-[0.95] text-[var(--cream)] drop-shadow-lg">
               Where the
-              <span className="block italic text-shimmer mt-1">
+              <span className="block italic text-shimmer mt-0.5">
                 wild meets
               </span>
-              <span className="block text-[var(--gold)] mt-1">the wonderful</span>
+              <span className="block text-[var(--gold)] mt-0.5">the wonderful</span>
             </h1>
 
             {/* Ornament divider */}
-            <Ornament className="my-7 justify-start" />
+            <Ornament className="my-4 md:my-5 justify-start" />
 
-            <p className="max-w-xl text-base md:text-lg text-[var(--cream)]/85 leading-relaxed font-light">
+            <p className="max-w-xl text-sm sm:text-base md:text-lg text-[var(--cream)]/85 leading-relaxed font-light">
               From the timeless pyramids of Egypt to the baobabs of Madagascar,
               we craft bespoke journeys across East Africa and the Indian Ocean,
               where every sunrise feels like the first.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-3">
+            <div className="mt-5 md:mt-6 flex flex-wrap items-center gap-3">
               <a
                 href="#destinations"
-                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-8 py-4 text-sm font-semibold text-[var(--ink)] shadow-[0_8px_30px_-8px_rgba(122,96,51,0.7)] hover:shadow-[0_12px_40px_-8px_rgba(122,96,51,0.9)] hover:-translate-y-0.5 transition-all"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-6 md:px-8 py-3 md:py-3.5 text-sm font-semibold text-[var(--ink)] shadow-[0_8px_30px_-8px_rgba(122,96,51,0.7)] hover:shadow-[0_12px_40px_-8px_rgba(122,96,51,0.9)] hover:-translate-y-0.5 transition-all"
               >
                 <span>Begin the Journey</span>
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-[var(--ink)]/10 group-hover:translate-x-1 transition-transform">
@@ -88,7 +88,7 @@ export function Hero() {
               </a>
               <a
                 href={`mailto:${SITE.bookingEmail}`}
-                className="inline-flex items-center gap-2 rounded-full border border-[var(--cream)]/40 bg-[var(--ink)]/20 backdrop-blur px-7 py-4 text-sm font-semibold text-[var(--cream)] hover:bg-[var(--ink)]/40 hover:border-[var(--gold)] transition-all"
+                className="inline-flex items-center gap-2 rounded-full border border-[var(--cream)]/40 bg-[var(--ink)]/20 backdrop-blur px-5 md:px-7 py-3 md:py-3.5 text-sm font-semibold text-[var(--cream)] hover:bg-[var(--ink)]/40 hover:border-[var(--gold)] transition-all"
               >
                 <Calendar className="h-4 w-4" />
                 Book Now
@@ -99,7 +99,7 @@ export function Hero() {
 
         {/* Bottom info strip: destinations count + scroll hint */}
         <div className="absolute bottom-0 inset-x-0 z-10 border-t border-[var(--gold)]/20 bg-[var(--ink)]/30 backdrop-blur-sm">
-          <div className="container mx-auto max-w-7xl px-6 py-4 flex items-center justify-between text-[var(--cream)]">
+          <div className="container mx-auto max-w-7xl px-6 py-3 flex items-center justify-between text-[var(--cream)]">
             <div className="flex items-center gap-3 text-xs sm:text-sm">
               <MapPin className="h-4 w-4 text-[var(--gold)]" />
               <span className="tracking-wide">
@@ -130,7 +130,7 @@ export function Hero() {
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-24 md:bottom-28 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+        <div className="absolute bottom-16 md:bottom-20 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
           {HERO_SLIDES.map((_, i) => (
             <button
               key={i}
