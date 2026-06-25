@@ -104,4 +104,4 @@ export const HERO_SLIDES = [
   "/sunzee/slide3.png",
 ] as const;
 
-export const CTA_IMAGE = "https://sfile.chatglm.cn/images-ppt/b8db4d3ffd6c.jpg" as const;
+export const CTA_IMAGE = "/sunzee/cta-bg.png" as const;
