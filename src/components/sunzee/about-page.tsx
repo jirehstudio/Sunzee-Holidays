@@ -19,6 +19,7 @@ import {
   Users,
   Briefcase,
   CheckCircle2,
+  Home,
 } from "lucide-react";
 import { SITE } from "./data";
 import { Ornament, SectionLabel } from "./ornaments";
@@ -92,12 +93,12 @@ export function AboutPage() {
 
           <Reveal delay={0.15}>
             <p className="text-base md:text-lg text-[var(--ink)]/75 leading-relaxed mb-5 font-light">
-              Sunzee Holidays can be close to Travel agents and Travelers providing them with an authentic &amp; original experience. Sunzee has the B2B segment. Sunzee strives to make the best the ultimate travel solutions with the widest selection of hotels and resorts only in the B2B space across the globe.
+              Sunzee Holidays opens its doors to travel agents and travellers, providing them with an authentic and tropical experience. Specializing in the B2B segment, Sunzee Holidays strives to be the ultimate travel superstore, offering the widest selection of hotels and the best online product ranges in the B2B space across the globe.
             </p>
           </Reveal>
           <Reveal delay={0.25}>
             <p className="text-base md:text-lg text-[var(--ink)]/75 leading-relaxed font-light">
-              Further Sunzee is taking their relationship beyond a new function, by becoming partners and Co-Founder of Sunzee Holidays. With being from the Travel and Tourism industry for more than 25 years, Sunzee has a vision to provide the best travel solutions to their valuable clients. Extensive experience in the industry of client servicing, willing to go an extra mile to ensure satisfaction to their valuable clients has been their forte.
+              The father-daughter duo takes their relationship to a new horizon by becoming partners and co-founders of Sunzee Holidays. Having been in the travel and tourism industry for decades, they firmly believe in the principle that "servicing with a smile" reflects the true spirit of an organization, as it is a validation of its brand promise.
             </p>
           </Reveal>
         </div>
@@ -144,7 +145,7 @@ export function AboutPage() {
                   </div>
                   <div>
                     <h3 className="font-display text-2xl md:text-3xl font-semibold text-[var(--cream)] leading-tight">
-                      Imran Ally Kanawoah
+                      Imran Ally Kanowah
                     </h3>
                     <p className="text-sm text-[var(--gold)] mt-1 tracking-wide italic font-display">
                       Founder &amp; President
@@ -153,12 +154,12 @@ export function AboutPage() {
                 </div>
 
                 <p className="text-sm md:text-base text-[var(--cream)]/75 leading-relaxed font-light">
-                  Equipped with 25 years of experience in the Tourism Sector, and hands-on experience in various destinations such as France, UK, South Africa, India, UAE, and the Maldives, Imran has a wealth of knowledge in the travel industry. His passion for travel and commitment to customer satisfaction has driven him to create Sunzee Holidays, a company that understands the intricacies of client servicing and is willing to go an extra mile to ensure satisfaction to their valuable clients.
+                  Enriched with 30 years of experience in the tourism sector, and having handled clients and groups from various destinations such as France, the UK, South Africa, India, the UAE, and the GCC, Imran wishes to assist agents and tourists with his expertise. Having worked as a General Manager and Director in his previous roles, he thoroughly understands the intricacies of client servicing. Willing to go the extra mile to ensure complete satisfaction for his valued clientele, this dedication has always been his forte. He is extremely passionate and committed to continually achieving a higher level of performance alongside his team.
                 </p>
 
                 {/* Stats */}
                 <div className="mt-6 pt-5 border-t border-[var(--gold)]/15 grid grid-cols-3 gap-3 text-center">
-                  <Stat icon={Award} value="25+" label="Years" />
+                  <Stat icon={Award} value="30+" label="Years" />
                   <Stat icon={Globe2} value="6+" label="Countries" />
                   <Stat icon={Heart} value="5K+" label="Clients" />
                 </div>
@@ -180,7 +181,7 @@ export function AboutPage() {
                   </div>
                   <div>
                     <h3 className="font-display text-2xl md:text-3xl font-semibold text-[var(--cream)] leading-tight">
-                      Zaynah Kanawoah
+                      Zaynah Kanowah
                     </h3>
                     <p className="text-sm text-[var(--gold)] mt-1 tracking-wide italic font-display">
                       Co-Founder &amp; CEO
@@ -189,7 +190,7 @@ export function AboutPage() {
                 </div>
 
                 <p className="text-sm md:text-base text-[var(--cream)]/75 leading-relaxed font-light">
-                  Being qualified in Business and Tourism Management and specialized in Business &amp; Leisure (B2B, MICE and FIT) and Travel/Technology, she brings a unique perspective to the company. Her background in the industry has given her a deep understanding of the needs and expectations of clients, and she is committed to using this knowledge to create exceptional travel experiences for them. Her passion for travel and her dedication to providing the best possible service to her clients has made her an invaluable asset to the company. Her attention to detail and her ability to think outside the box has made her a key player in the company&apos;s success.
+                  Qualified in Business and Tourism Management and specializing in Business-to-Business (B2B), MICE/events, and travel technology, Zaynah strongly believes that her passion for the industry was passed down by her father. Like him, she believes in listening to and understanding a client's needs, recognizing that a journey is a memory of a lifetime. In her previous roles, she has enhanced processes, driven innovation, and initiated changes that foster future business growth. Her belief in strong trade partnerships consistently leads to better outcomes, a value she brings to all her upcoming projects. Her mantra is: &ldquo;You will be judged by what you do, not what you say.&rdquo;
                 </p>
 
                 <div className="mt-6 pt-5 border-t border-[var(--gold)]/15 grid grid-cols-3 gap-3 text-center">
@@ -244,7 +245,7 @@ export function AboutPage() {
               </h2>
               <Ornament className="my-6 justify-start" />
               <p className="text-base md:text-lg text-[var(--ink)]/75 leading-relaxed font-light">
-                Sunzee is a combination of 2 words, Sun an English word for the Sunlight and Zee is a Dutch word which means Sea in English. Which translates Sun &amp; Sea becomes the right combination.
+                Sunzee is a combination of two words: &ldquo;Sun&rdquo;, the English word for sunlight, and &ldquo;Zee&rdquo;, the Dutch word for sea. Thus, &ldquo;Sun &amp; Zee&rdquo; becomes the perfect combination.
               </p>
             </div>
           </Reveal>
@@ -278,11 +279,11 @@ export function AboutPage() {
                 <div className="h-px w-16 bg-[var(--gold)]/60 mb-6" />
                 <ul className="space-y-4">
                   {[
-                    "High quality, luxurious in Maldives and other Indian Ocean Islands and nearby neighboring countries",
-                    "Luxury travel, Honeymoon packages, Family packages",
-                    "Business travel, MICE travel",
-                    "Day trips and short excursions, Island hopping & relaxation",
-                    "Water sports and theme tours, honeymoon wedding your packages / shootings",
+                    "High-quality vacations in Mauritius, other Indian Ocean islands, and neighbouring countries",
+                    "Leisure, cultural, and physical adventure holidays",
+                    "Business and MICE (Meetings, Incentives, Conferences, and Exhibitions) travel",
+                    "Day trips and urban excursions",
+                    "Special interest tours, theme tours, honeymoon/wedding packages, and photo shoots",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[var(--gold)]/15 text-[var(--gold)] text-xs font-bold mt-0.5">
@@ -305,20 +306,19 @@ export function AboutPage() {
                     <Compass className="h-5 w-5" />
                   </div>
                   <h3 className="font-display text-3xl font-semibold text-[var(--cream)]">
-                    What do we assist for?
+                    What we assist with
                   </h3>
                 </div>
                 <div className="h-px w-16 bg-[var(--gold)]/60 mb-6" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
-                    { icon: Hotel, label: "Hotel and resort booking" },
-                    { icon: Plane, label: "Flights and transportation" },
-                    { icon: Car, label: "Ground transfers" },
-                    { icon: MapPin, label: "Guided tours and excursions" },
-                    { icon: Compass, label: "Tours and activities" },
-                    { icon: Ship, label: "Car Rental" },
-                    { icon: Users, label: "Events & Meetings" },
-                    { icon: Globe2, label: "Local & Global Activities" },
+                    { icon: Hotel, label: "Hotel and resort bookings" },
+                    { icon: Home, label: "Private villas and apartments" },
+                    { icon: Car, label: "Ground services and transfers" },
+                    { icon: MapPin, label: "Tour guide services" },
+                    { icon: Compass, label: "Event management" },
+                    { icon: Car, label: "Car rentals" },
+                    { icon: Globe2, label: "Land and water activities" },
                   ].map(({ icon: Icon, label }, i) => (
                     <div
                       key={i}
@@ -363,7 +363,7 @@ export function AboutPage() {
                 </div>
                 <div className="h-px w-16 bg-[var(--gold)]/60 mb-6" />
                 <p className="text-base md:text-lg text-[var(--ink)]/75 leading-relaxed font-light">
-                  To be the reliable partner to our Agents throughout the entire and providing the guests with unforgettable experiences with our skilled professional team who will provide them with excellent service with passion and dedication.
+                  To be a reliable partner to our agents throughout the world and to provide our guests with unforgettable experiences, supported by our skilled professional team who deliver firsthand assistance with passion and dedication.
                 </p>
               </div>
             </Reveal>
@@ -395,7 +395,7 @@ export function AboutPage() {
                   </div>
                   <div className="h-px w-16 bg-[var(--gold)]/60 mb-6" />
                   <p className="font-display text-2xl md:text-3xl italic font-light leading-tight text-[var(--cream)]">
-                    &ldquo;Our guest&apos;s satisfaction is our achievement.&rdquo;
+                    &ldquo;Our guests&apos; satisfaction is our achievement.&rdquo;
                   </p>
                 </div>
               </div>
