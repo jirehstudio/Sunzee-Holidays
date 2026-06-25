@@ -17,7 +17,6 @@ import {
 import {
   DestinationPackages,
   FILTER_FACILITIES,
-  FILTER_CATEGORIES,
 } from "./destination-data";
 import { SITE } from "./data";
 import { Ornament, SectionLabel } from "./ornaments";
@@ -27,7 +26,6 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [priceMax, setPriceMax] = useState(1500);
   const [selectedFacilities, setSelectedFacilities] = useState<string[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
   const toggleFacility = (f: string) =>
@@ -38,7 +36,6 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
   const resetFilters = () => {
     setPriceMax(1500);
     setSelectedFacilities([]);
-    setSelectedCategory(null);
     setSearchQuery("");
   };
 
@@ -318,27 +315,6 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   </div>
                 </FilterCard>
 
-                {/* Categories */}
-                <FilterCard title="Categories" icon={<ArrowRight className="h-4 w-4 text-[var(--gold)]" />}>
-                  <ul className="space-y-2.5">
-                    {FILTER_CATEGORIES.map((c) => (
-                      <li key={c}>
-                        <button
-                          type="button"
-                          onClick={() => setSelectedCategory(selectedCategory === c ? null : c)}
-                          className={`flex items-center justify-between w-full text-sm text-left transition-colors ${
-                            selectedCategory === c
-                              ? "text-[var(--gold-deep)] font-semibold"
-                              : "text-[var(--ink)]/70 hover:text-[var(--emerald)]"
-                          }`}
-                        >
-                          <span>{c}</span>
-                          <ChevronRight className="h-3 w-3" />
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                </FilterCard>
 
                 {/* Reset */}
                 <button
@@ -471,23 +447,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   ))}
                 </div>
               </div>
-              {/* Categories */}
-              <div>
-                <h4 className="font-display text-base font-semibold text-[var(--emerald)] mb-2">Categories</h4>
-                <ul className="space-y-2">
-                  {FILTER_CATEGORIES.map((c) => (
-                    <li key={c}>
-                      <button
-                        type="button"
-                        onClick={() => setSelectedCategory(selectedCategory === c ? null : c)}
-                        className={`text-sm ${selectedCategory === c ? "text-[var(--gold-deep)] font-semibold" : "text-[var(--ink)]/70"}`}
-                      >
-                        {c}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
               <button
                 type="button"
                 onClick={() => {
