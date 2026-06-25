@@ -42,7 +42,7 @@ export function FloatingActions() {
       {/* Mobile bottom nav */}
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-40 glass-dark border-t border-[var(--gold)]/30">
         <ul className="grid grid-cols-4">
-          <MobileNavItem href="#home" icon={<Home className="h-5 w-5" />} label="Home" />
+          <MobileNavItem href="/" icon={<Home className="h-5 w-5" />} label="Home" />
           <MobileNavItem
             href={`mailto:${SITE.email}`}
             icon={<Mail className="h-5 w-5" />}
@@ -53,7 +53,7 @@ export function FloatingActions() {
             icon={<Phone className="h-5 w-5" />}
             label="Call"
           />
-          <MobileNavItem href="#enquiry" icon={<FileText className="h-5 w-5" />} label="Enquiry" />
+          <MobileNavItem href="/#enquiry" icon={<FileText className="h-5 w-5" />} label="Enquiry" />
         </ul>
       </nav>
     </>

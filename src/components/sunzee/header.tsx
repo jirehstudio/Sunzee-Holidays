@@ -35,7 +35,7 @@ export function Header() {
         <div className="container mx-auto max-w-7xl px-6">
           <div className="flex items-center justify-between gap-6 py-2 md:py-2.5">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2.5 group" aria-label={SITE.name}>
+            <a href="/" className="flex items-center gap-2.5 group" aria-label={SITE.name}>
               <div className="relative h-12 w-12 md:h-16 md:w-16 shrink-0">
                 {/* Gold ring around logo */}
                 <div className="absolute inset-0 rounded-full ring-1 ring-[var(--gold)]/40 group-hover:ring-[var(--gold)] transition-all" />
@@ -116,7 +116,7 @@ export function Header() {
                 <span className="hidden xl:inline">Call Us</span>
               </a>
               <a
-                href="#enquiry"
+                href="/#enquiry"
                 className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-5 py-2 text-sm font-semibold text-[var(--ink)] shadow-[0_4px_20px_-5px_rgba(122,96,51,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(122,96,51,0.7)] hover:-translate-y-0.5 transition-all"
               >
                 <span>Enquiry</span>
@@ -192,7 +192,7 @@ export function Header() {
             </nav>
             <div className="p-4 border-t border-[var(--gold)]/20 space-y-2">
               <a
-                href="#enquiry"
+                href="/#enquiry"
                 onClick={() => setMobileOpen(false)}
                 className="block w-full rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-5 py-3 text-center text-sm font-semibold text-[var(--ink)]"
               >

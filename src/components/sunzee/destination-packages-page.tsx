@@ -213,7 +213,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
                   </p>
                 </div>
                 <a
-                  href="#enquiry"
+                  href="/#enquiry"
                   className="relative inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--ink)] shadow-lg hover:-translate-y-0.5 transition-all"
                 >
                   <Calendar className="h-4 w-4" />
