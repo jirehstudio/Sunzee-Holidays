@@ -3,7 +3,6 @@ import { Header } from "@/components/sunzee/header";
 import { Hero } from "@/components/sunzee/hero";
 import { Destinations } from "@/components/sunzee/destinations";
 import { About } from "@/components/sunzee/about";
-import { TourPackages } from "@/components/sunzee/tour-packages";
 import { CTA } from "@/components/sunzee/cta";
 import { Enquiry } from "@/components/sunzee/enquiry";
 import { Partners } from "@/components/sunzee/partners";
@@ -19,7 +18,6 @@ export default function Home() {
         <Hero />
         <Destinations />
         <About />
-        <TourPackages />
         <CTA />
         <Enquiry />
         <Partners />
