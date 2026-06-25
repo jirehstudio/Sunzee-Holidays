@@ -36,7 +36,7 @@ export function Header() {
           <div className="flex items-center justify-between gap-6 py-3.5">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3 group" aria-label={SITE.name}>
-              <div className="relative h-12 w-12 md:h-14 md:w-14 shrink-0">
+              <div className="relative h-16 w-16 md:h-20 md:w-20 shrink-0">
                 {/* Gold ring around logo */}
                 <div className="absolute inset-0 rounded-full ring-1 ring-[var(--gold)]/40 group-hover:ring-[var(--gold)] transition-all" />
                 <img
