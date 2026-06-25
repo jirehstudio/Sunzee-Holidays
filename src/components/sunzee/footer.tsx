@@ -230,7 +230,7 @@ export function Footer() {
             <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
             {SITE.copyright}
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
             <span className="text-lg md:text-xl font-semibold text-[var(--cream)]/95">Powered By</span>
             <a
               href="https://jirehstudio.com"
