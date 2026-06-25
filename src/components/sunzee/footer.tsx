@@ -231,7 +231,7 @@ export function Footer() {
             {SITE.copyright}
           </p>
           <div className="flex items-center gap-3">
-            <span className="text-base md:text-lg font-medium text-[var(--cream)]/90">Powered By</span>
+            <span className="text-lg md:text-xl font-semibold text-[var(--cream)]/95">Powered By</span>
             <a
               href="https://jirehstudio.com"
               target="_blank"
@@ -241,7 +241,7 @@ export function Footer() {
               <img
                 src="/sunzee/jireh-logo.jpg"
                 alt="Jireh Studio"
-                className="h-12 md:h-14 w-auto object-contain rounded-lg"
+                className="h-16 md:h-20 w-auto object-contain rounded-lg"
               />
             </a>
           </div>
