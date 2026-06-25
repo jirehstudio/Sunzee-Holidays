@@ -6,16 +6,16 @@ import { SectionLabel, Ornament } from "./ornaments";
 import { Reveal } from "./reveal";
 
 const STATS = [
-  { icon: Users, value: "5,000+", label: "Happy travellers" },
-  { icon: MapPin, value: "6", label: "Signature destinations" },
-  { icon: Plane, value: "15+", label: "Years of journeys" },
+  { icon: Award, value: "30 Yrs", label: "Experience" },
+  { icon: MapPin, value: "6+", label: "Destinations" },
+  { icon: Users, value: "B2B", label: "Specialist" },
 ];
 
 const POINTS = [
-  "Hand-picked luxury hotels & best resorts",
-  "On-ground specialists in every destination",
-  "Tailor-made itineraries, no cookie-cutter tours",
-  "24/7 support from booking to homecoming",
+  "Widest selection of hotels globally",
+  "Authentic & tropical experiences",
+  "Specialists in the B2B space",
+  "Expert firsthand assistance",
 ];
 
 export function About() {
@@ -96,19 +96,19 @@ export function About() {
             </Reveal>
             <Reveal delay={0.25}>
               <p className="text-[var(--cream)]/75 text-base md:text-lg leading-relaxed font-light">
-                {SITE.name} is a specialist destination management company
-                curating bespoke journeys across East Africa and the Indian Ocean.
-                From the timeless monuments of Egypt to the lemurs of Madagascar,
-                we connect discerning travellers with the soul of each destination
-                through local expertise, handpicked stays, and seamless on-ground
-                logistics.
+                Sunzee Holidays opens its doors to travel agents and travellers,
+                providing them with an authentic and tropical experience.
+                Specializing in the B2B segment, Sunzee Holidays strives to make
+                itself the ultimate travel superstore with the widest selection of
+                hotels and the best online product ranges in the B2B space across the globe.
               </p>
             </Reveal>
             <Reveal delay={0.35}>
               <p className="mt-4 text-[var(--cream)]/75 text-base md:text-lg leading-relaxed font-light">
-                Our team lives where you travel. That means insider access,
-                authentic encounters, and the confidence of having a local partner
-                on call, every step of the way.
+                Our father-daughter partnership brings decades of experience
+                in the travel and tourism industry, firmly believing in the
+                principle that servicing with a smile reflects the true spirit of an
+                organization and validates its promise.
               </p>
             </Reveal>
 

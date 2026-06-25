@@ -159,9 +159,9 @@ export function AboutPage() {
 
                 {/* Stats */}
                 <div className="mt-6 pt-5 border-t border-[var(--gold)]/15 grid grid-cols-3 gap-3 text-center">
-                  <Stat icon={Award} value="30+" label="Years" />
-                  <Stat icon={Globe2} value="6+" label="Countries" />
-                  <Stat icon={Heart} value="5K+" label="Clients" />
+                  <Stat icon={Award} value="30 Yrs" label="Experience" />
+                  <Stat icon={Globe2} value="6+" label="Destinations" />
+                  <Stat icon={Users} value="GM & Dir" label="Former Roles" />
                 </div>
               </div>
             </RevealItem>
@@ -195,8 +195,8 @@ export function AboutPage() {
 
                 <div className="mt-6 pt-5 border-t border-[var(--gold)]/15 grid grid-cols-3 gap-3 text-center">
                   <Stat icon={Briefcase} value="B2B" label="Specialist" />
-                  <Stat icon={Sparkles} value="MICE" label="Expert" />
-                  <Stat icon={Compass} value="FIT" label="Travel" />
+                  <Stat icon={Sparkles} value="MICE" label="Events" />
+                  <Stat icon={Compass} value="Tech" label="Innovation" />
                 </div>
               </div>
             </RevealItem>
@@ -306,7 +306,7 @@ export function AboutPage() {
                     <Compass className="h-5 w-5" />
                   </div>
                   <h3 className="font-display text-3xl font-semibold text-[var(--cream)]">
-                    What we assist with
+                    What do we assist for?
                   </h3>
                 </div>
                 <div className="h-px w-16 bg-[var(--gold)]/60 mb-6" />
