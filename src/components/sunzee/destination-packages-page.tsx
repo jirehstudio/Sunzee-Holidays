@@ -416,7 +416,7 @@ export function DestinationPackagesPage({ data }: { data: DestinationPackages })
             className="absolute inset-0 bg-[var(--ink)]/60 backdrop-blur-sm"
             onClick={() => setMobileFilterOpen(false)}
           />
-          <div className="absolute right-0 top-0 h-full w-80 max-w-[85%] bg-[var(--cream)] shadow-2xl flex flex-col overflow-y-auto">
+          <div className="absolute right-0 top-0 bottom-0 w-80 max-w-[85%] bg-cream shadow-2xl flex flex-col overflow-y-auto">
             <div className="flex items-center justify-between p-4 border-b border-[var(--gold)]/20 sticky top-0 bg-[var(--cream)] z-10">
               <h3 className="font-display text-lg font-semibold text-[var(--emerald)]">Filters</h3>
               <button

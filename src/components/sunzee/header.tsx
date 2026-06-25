@@ -140,7 +140,7 @@ export function Header() {
             className="absolute inset-0 bg-[var(--ink)]/60 backdrop-blur-sm"
             onClick={() => setMobileOpen(false)}
           />
-          <div className="absolute right-0 top-0 h-full w-80 max-w-[85%] bg-[var(--cream)] shadow-2xl flex flex-col">
+          <div className="absolute right-0 top-0 bottom-0 w-80 max-w-[85%] bg-cream shadow-2xl flex flex-col">
             <div className="flex items-center justify-between p-4 border-b border-[var(--gold)]/20">
               <div className="flex items-center gap-2">
                 <img
