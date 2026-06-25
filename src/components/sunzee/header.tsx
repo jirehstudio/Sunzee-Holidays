@@ -33,10 +33,10 @@ export function Header() {
         }`}
       >
         <div className="container mx-auto max-w-7xl px-6">
-          <div className="flex items-center justify-between gap-6 py-3.5">
+          <div className="flex items-center justify-between gap-6 py-2 md:py-2.5">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-3 group" aria-label={SITE.name}>
-              <div className="relative h-16 w-16 md:h-20 md:w-20 shrink-0">
+            <a href="#home" className="flex items-center gap-2.5 group" aria-label={SITE.name}>
+              <div className="relative h-12 w-12 md:h-16 md:w-16 shrink-0">
                 {/* Gold ring around logo */}
                 <div className="absolute inset-0 rounded-full ring-1 ring-[var(--gold)]/40 group-hover:ring-[var(--gold)] transition-all" />
                 <img
@@ -46,13 +46,13 @@ export function Header() {
                 />
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-display text-xl md:text-2xl font-semibold tracking-tight text-[var(--emerald)]">
+                <span className="font-display text-lg md:text-xl font-semibold tracking-tight text-[var(--emerald)]">
                   Sunzee
                 </span>
-                <span className="font-display text-xl md:text-2xl font-semibold tracking-tight text-[var(--gold-deep)] italic">
+                <span className="font-display text-lg md:text-xl font-semibold tracking-tight text-[var(--gold-deep)] italic">
                   Holidays
                 </span>
-                <span className="hidden md:block text-[9px] tracking-[0.32em] uppercase text-[var(--ink)]/50 mt-0.5">
+                <span className="hidden md:block text-[8px] tracking-[0.32em] uppercase text-[var(--ink)]/50 mt-0.5">
                   East Africa · Indian Ocean
                 </span>
               </div>
@@ -110,14 +110,14 @@ export function Header() {
             <div className="flex items-center gap-2">
               <a
                 href={`tel:${SITE.phoneRaw}`}
-                className="hidden md:inline-flex items-center gap-2 rounded-full border border-[var(--emerald)]/30 px-4 py-2 text-sm font-medium text-[var(--emerald)] hover:bg-[var(--emerald)] hover:text-[var(--cream)] transition-colors"
+                className="hidden md:inline-flex items-center gap-2 rounded-full border border-[var(--emerald)]/30 px-4 py-1.5 text-sm font-medium text-[var(--emerald)] hover:bg-[var(--emerald)] hover:text-[var(--cream)] transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 <span className="hidden xl:inline">Call Us</span>
               </a>
               <a
                 href="#enquiry"
-                className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-6 py-2.5 text-sm font-semibold text-[var(--ink)] shadow-[0_4px_20px_-5px_rgba(122,96,51,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(122,96,51,0.7)] hover:-translate-y-0.5 transition-all"
+                className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--gold-deep)] to-[var(--gold)] px-5 py-2 text-sm font-semibold text-[var(--ink)] shadow-[0_4px_20px_-5px_rgba(122,96,51,0.5)] hover:shadow-[0_8px_30px_-5px_rgba(122,96,51,0.7)] hover:-translate-y-0.5 transition-all"
               >
                 <span>Enquiry</span>
                 <span className="text-[var(--ink)]/60">→</span>
@@ -125,7 +125,7 @@ export function Header() {
               <button
                 type="button"
                 onClick={() => setMobileOpen(true)}
-                className="lg:hidden grid h-10 w-10 place-items-center rounded-full text-[var(--emerald)] hover:bg-[var(--gold)]/10 transition-colors"
+                className="lg:hidden grid h-9 w-9 place-items-center rounded-full text-[var(--emerald)] hover:bg-[var(--gold)]/10 transition-colors"
                 aria-label="Open menu"
               >
                 <Menu className="h-5 w-5" />
