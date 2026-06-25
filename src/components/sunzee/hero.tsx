@@ -107,12 +107,7 @@ export function Hero() {
                 Signature destinations across two oceans
               </span>
             </div>
-            <div className="hidden md:flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-[var(--cream)]/70">
-              <span>Scroll to explore</span>
-              <span className="grid h-8 w-8 place-items-center rounded-full border border-[var(--gold)]/40 animate-bounce">
-                ↓
-              </span>
-            </div>
+
           </div>
         </div>
 
