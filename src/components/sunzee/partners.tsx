@@ -43,7 +43,7 @@ export function Partners() {
             <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[var(--emerald)] to-transparent z-10 pointer-events-none" />
             <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[var(--emerald)] to-transparent z-10 pointer-events-none" />
 
-            <div className="flex items-center gap-5 md:gap-6 animate-[marquee_20s_linear_infinite] hover:[animation-play-state:paused]">
+            <div className="flex w-max items-center gap-5 md:gap-6 animate-[marquee_20s_linear_infinite] hover:[animation-play-state:paused]">
               {[...PARTNER_IMAGES, ...PARTNER_IMAGES, ...PARTNER_IMAGES].map(
                 (p, i) => (
                   <div

@@ -149,7 +149,7 @@ export function Hero() {
 
       {/* Marquee strip */}
       <div className="bg-[var(--emerald)] text-[var(--cream)] py-3.5 overflow-hidden border-b border-[var(--gold)]/20">
-        <div className="flex items-center gap-12 whitespace-nowrap animate-[marquee_40s_linear_infinite]">
+        <div className="flex w-max items-center gap-12 whitespace-nowrap animate-[marquee_40s_linear_infinite]">
           {Array.from({ length: 3 }).map((_, k) => (
             <div key={k} className="flex items-center gap-12 text-sm tracking-[0.2em] uppercase font-display">
               <span>Egypt</span>
