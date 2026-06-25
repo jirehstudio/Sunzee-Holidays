@@ -99,9 +99,9 @@ export const IMPORTANT_LINKS = [
 ] as const;
 
 export const HERO_SLIDES = [
-  "https://sfile.chatglm.cn/images-ppt/aefc9acf92b7.png",
-  "https://sfile.chatglm.cn/images-ppt/5f59ea0f42f7.jpg",
-  "https://sfile.chatglm.cn/images-ppt/b8805a3fa8bd.jpg",
+  "/sunzee/slide1.png",
+  "/sunzee/slide2.png",
+  "/sunzee/slide3.png",
 ] as const;
 
 export const CTA_IMAGE = "https://sfile.chatglm.cn/images-ppt/b8db4d3ffd6c.jpg" as const;
