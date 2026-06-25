@@ -247,5 +247,5 @@ function ContactRow({
       </div>
     </div>
   );
-  return href ? <a href={href}>{content}</a> : content;
+  return href ? <a href={href} className="block">{content}</a> : content;
 }
