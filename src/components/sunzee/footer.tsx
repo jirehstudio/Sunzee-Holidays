@@ -28,7 +28,7 @@ export function Footer() {
       {/* Top gold accent line */}
       <div className="h-1 bg-gradient-to-r from-transparent via-[var(--gold)] to-transparent" />
 
-      <div className="container mx-auto max-w-7xl px-6 py-16 md:py-20 relative">
+      <div className="container mx-auto max-w-7xl px-6 pt-16 pb-8 md:pt-20 md:pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand col */}
           <div>
@@ -171,22 +171,26 @@ export function Footer() {
 
       {/* Copyright bar */}
       <div className="border-t border-[var(--gold)]/15 bg-[var(--ink)]/80">
-        <div className="container mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[var(--cream)]/65">
+        <div className="container mx-auto max-w-7xl px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--cream)]/75">
           <p className="flex items-center gap-2">
             <span className="h-1 w-1 rounded-full bg-[var(--gold)]" />
             {SITE.copyright}
           </p>
-          <p>
-            Maintained By{" "}
+          <div className="flex items-center gap-3">
+            <span className="text-base md:text-lg font-medium text-[var(--cream)]/90">Powered By</span>
             <a
-              href={SITE.maintainedByUrl}
+              href="https://jirehstudio.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[var(--gold)] hover:underline"
+              className="inline-block transition-transform hover:scale-105"
             >
-              {SITE.maintainedBy}
+              <img
+                src="/sunzee/jireh-logo.jpg"
+                alt="Jireh Studio"
+                className="h-12 md:h-14 w-auto object-contain rounded-lg"
+              />
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
