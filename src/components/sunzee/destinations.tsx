@@ -43,13 +43,17 @@ export function Destinations() {
             return (
               <RevealItem
                 key={d.name}
-                className={featured ? "lg:col-span-2 lg:row-span-2" : ""}
+                className={featured ? "lg:col-span-2 lg:row-span-2 h-full" : "h-full"}
               >
                 <a
                   href={d.href}
                   className="group relative block overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-700 h-full"
                 >
-                  <div className={`relative w-full overflow-hidden bg-[var(--emerald)] ${featured ? "aspect-[16/13] lg:aspect-[16/15]" : "aspect-[4/5]"}`}>
+                  <div className={`relative w-full overflow-hidden bg-[var(--emerald)] ${
+                    featured
+                      ? "aspect-[16/13] md:aspect-auto md:h-full"
+                      : "aspect-[4/5]"
+                  }`}>
                     <img
                       src={d.image}
                       alt={d.name}
