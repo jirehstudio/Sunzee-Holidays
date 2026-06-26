@@ -5,7 +5,6 @@ import {
   Mail,
   MapPin,
   Compass,
-  Sparkles,
   Award,
   Heart,
   Target,
@@ -43,7 +42,6 @@ export function AboutPage() {
 
         <div className="relative z-10 container mx-auto max-w-7xl px-6 h-full flex flex-col items-center justify-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-[var(--gold)]/40 bg-[var(--ink)]/30 backdrop-blur px-4 py-1.5 mb-5">
-            <Sparkles className="h-3.5 w-3.5 text-[var(--gold)]" />
             <span className="text-[10px] md:text-xs font-medium tracking-[0.32em] uppercase text-[var(--cream)]">
               Our Story
             </span>
@@ -195,7 +193,7 @@ export function AboutPage() {
 
                 <div className="mt-6 pt-5 border-t border-[var(--gold)]/15 grid grid-cols-3 gap-3 text-center">
                   <Stat icon={Briefcase} value="B2B" label="Specialist" />
-                  <Stat icon={Sparkles} value="MICE" label="Events" />
+                  <Stat icon={Calendar} value="MICE" label="Events" />
                   <Stat icon={Compass} value="Tech" label="Innovation" />
                 </div>
               </div>
@@ -270,7 +268,7 @@ export function AboutPage() {
               <div className="rounded-2xl border border-[var(--gold)]/25 bg-[var(--ink)]/25 backdrop-blur p-8 md:p-10 h-full">
                 <div className="flex items-center gap-3 mb-5">
                   <div className="grid h-12 w-12 place-items-center rounded-xl bg-[var(--gold)]/15 text-[var(--gold)]">
-                    <Sparkles className="h-5 w-5" />
+                    <Plane className="h-5 w-5" />
                   </div>
                   <h3 className="font-display text-3xl font-semibold text-[var(--cream)]">
                     What we offer?
