@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Sparkles } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SITE, CTA_IMAGE } from "./data";
 import { Ornament } from "./ornaments";
 
@@ -59,7 +59,6 @@ export function CTA() {
             href={`tel:${SITE.phoneRaw}`}
             className="inline-flex items-center gap-2 rounded-full border border-[var(--cream)]/40 bg-[var(--ink)]/20 backdrop-blur px-8 py-4 text-sm font-semibold text-[var(--cream)] hover:bg-[var(--ink)]/40 hover:border-[var(--gold)] transition-all"
           >
-            <Sparkles className="h-4 w-4 text-[var(--gold)]" />
             or call {SITE.phone}
           </a>
         </div>
