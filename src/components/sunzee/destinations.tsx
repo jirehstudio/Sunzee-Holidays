@@ -9,7 +9,7 @@ export function Destinations() {
   return (
     <section
       id="destinations"
-      className="py-24 md:py-32 bg-paper relative overflow-hidden"
+      className="py-20 md:py-28 bg-paper relative overflow-hidden"
     >
       {/* Decorative compass watermark */}
       <div className="absolute -top-20 -right-20 opacity-[0.04] pointer-events-none">
@@ -24,7 +24,7 @@ export function Destinations() {
         {/* Section header */}
         <Reveal className="text-center max-w-3xl mx-auto mb-16">
           <SectionLabel>Where we travel</SectionLabel>
-          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl font-medium text-[var(--emerald)] mt-5 leading-[1.05]">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--emerald)] mt-5 leading-[1.05]">
             Top Destinations
           </h2>
           <Ornament className="mt-6" />
@@ -38,12 +38,12 @@ export function Destinations() {
         {/* Destination grid - magazine-style mixed layout */}
         <RevealStagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {DESTINATIONS.map((d, i) => {
-            // Make the first card span 2 columns on lg for visual interest
-            const featured = i === 0;
+            // Alternating magazine layout on desktop: Row 1 (index 0 is featured), Row 2 (index 3 is featured), Row 3 (index 4 is featured)
+            const featured = i === 0 || i === 3 || i === 4;
             return (
               <RevealItem
                 key={d.name}
-                className={featured ? "lg:col-span-2 lg:row-span-2 h-full" : "h-full"}
+                className={featured ? "lg:col-span-2 h-full" : "h-full"}
               >
                 <a
                   href={d.href}
@@ -51,8 +51,8 @@ export function Destinations() {
                 >
                   <div className={`relative w-full overflow-hidden bg-[var(--emerald)] ${
                     featured
-                      ? "aspect-[16/13] md:aspect-auto md:h-full"
-                      : "aspect-[4/5]"
+                      ? "aspect-[4/3] lg:aspect-[16/10]"
+                      : "aspect-[4/3] lg:aspect-[4/5]"
                   }`}>
                     <img
                       src={d.image}
@@ -81,15 +81,23 @@ export function Destinations() {
                     </div>
 
                     {/* Bottom content */}
-                    <div className={`absolute inset-x-0 bottom-0 p-6 md:p-7 text-[var(--cream)] ${featured ? "md:p-9" : ""}`}>
+                    <div className={`absolute inset-x-0 bottom-0 p-6 md:p-7 text-[var(--cream)] ${featured ? "lg:p-9" : ""}`}>
                       <div className="flex items-center gap-1.5 text-[10px] font-medium tracking-[0.32em] uppercase text-[var(--gold)] mb-2">
                         <MapPin className="h-3 w-3" />
                         East Africa
                       </div>
-                      <h3 className={`font-display font-medium leading-tight mb-2 ${featured ? "text-4xl md:text-5xl" : "text-2xl md:text-3xl"}`}>
+                      <h3 className={`font-display font-medium leading-tight mb-2 ${
+                        featured 
+                          ? "text-2xl md:text-3xl lg:text-5xl" 
+                          : "text-2xl md:text-3xl"
+                      }`}>
                         {d.name}
                       </h3>
-                      <p className={`text-[var(--cream)]/85 leading-relaxed max-w-md ${featured ? "text-base md:text-lg" : "text-sm"}`}>
+                      <p className={`text-[var(--cream)]/85 leading-relaxed max-w-md ${
+                        featured 
+                          ? "text-sm lg:text-lg" 
+                          : "text-sm"
+                      }`}>
                         {d.blurb}
                       </p>
                       <p className="mt-3 text-xs md:text-sm font-medium text-[var(--gold)] italic font-display">
