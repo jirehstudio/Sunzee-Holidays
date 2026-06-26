@@ -31,7 +31,7 @@ export const NAV = [
     ],
   },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/#enquiry" },
 ] as const;
 
 export const DESTINATIONS = [
