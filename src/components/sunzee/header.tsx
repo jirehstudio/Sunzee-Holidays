@@ -33,10 +33,10 @@ export function Header() {
         }`}
       >
         <div className="container mx-auto max-w-7xl px-6">
-          <div className="flex items-center justify-between gap-6 py-2 md:py-2.5">
+          <div className="flex items-center justify-between gap-6 py-1 md:py-0.5">
             {/* Logo */}
             <a href="/" className="flex items-center gap-2.5 group" aria-label={SITE.name}>
-              <div className="relative h-12 w-12 md:h-16 md:w-16 shrink-0">
+              <div className="relative h-14 w-14 md:h-20 md:w-20 shrink-0">
                 {/* Gold ring around logo */}
                 <div className="absolute inset-0 rounded-full ring-1 ring-[var(--gold)]/40 group-hover:ring-[var(--gold)] transition-all" />
                 <img
