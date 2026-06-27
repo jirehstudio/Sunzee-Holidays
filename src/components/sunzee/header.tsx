@@ -45,17 +45,6 @@ export function Header() {
                   className="h-full w-full object-contain transition-transform duration-700 group-hover:rotate-[15deg]"
                 />
               </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-display text-lg md:text-xl font-semibold tracking-tight text-[var(--emerald)]">
-                  Sunzee
-                </span>
-                <span className="font-display text-lg md:text-xl font-semibold tracking-tight text-[var(--gold-deep)] italic">
-                  Holidays
-                </span>
-                <span className="hidden md:block text-[8px] tracking-[0.32em] uppercase text-[var(--ink)]/50 mt-0.5">
-                  East Africa · Indian Ocean
-                </span>
-              </div>
             </a>
 
             {/* Desktop nav */}
@@ -150,9 +139,6 @@ export function Header() {
                   alt={`${SITE.name} logo`}
                   className="h-9 w-9 object-contain"
                 />
-                <span className="font-display font-semibold text-[var(--emerald)]">
-                  Sunzee Holidays
-                </span>
               </div>
               <button
                 type="button"
