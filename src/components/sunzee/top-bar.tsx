@@ -5,7 +5,7 @@ import { SITE } from "./data";
 
 export function TopBar() {
   return (
-    <div className="hidden md:block bg-[var(--emerald)] text-[var(--cream)] relative">
+    <div className="bg-[var(--emerald)] text-[var(--cream)] relative">
       {/* subtle texture */}
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
@@ -16,28 +16,28 @@ export function TopBar() {
         }}
       />
       <div className="container mx-auto max-w-7xl px-6 relative">
-        <div className="flex items-center justify-between py-2.5 text-xs">
-          <div className="flex items-center gap-7">
+        <div className="flex flex-col md:flex-row items-center justify-between py-2 md:py-2.5 text-[11px] md:text-xs gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-7">
             <a
               href={`mailto:${SITE.email}`}
-              className="flex items-center gap-2 hover:text-[var(--gold)] transition-colors"
+              className="flex items-center gap-1.5 hover:text-[var(--gold)] transition-colors"
             >
               <Mail className="h-3.5 w-3.5 text-[var(--gold)]" />
               <span className="tracking-wide">{SITE.email}</span>
             </a>
             <a
               href={`tel:${SITE.phoneRaw}`}
-              className="flex items-center gap-2 hover:text-[var(--gold)] transition-colors"
+              className="flex items-center gap-1.5 hover:text-[var(--gold)] transition-colors"
             >
               <Phone className="h-3.5 w-3.5 text-[var(--gold)]" />
               <span className="tracking-wide">{SITE.phone}</span>
             </a>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-2 text-[var(--cream)]/60 italic font-display text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+            <span className="flex items-center gap-2 text-[var(--cream)]/60 italic font-display text-xs md:text-sm">
               East Africa &amp; Indian Ocean
             </span>
-            <div className="h-4 w-px bg-[var(--gold)]/30" />
+            <div className="hidden md:block h-4 w-px bg-[var(--gold)]/30" />
             <div className="flex items-center gap-1.5">
               <SocialIcon href={SITE.facebook} label="Facebook">
                 <Facebook className="h-3.5 w-3.5" />
